@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Retorno de Contato</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                xibiu: {
+                    blue: "#0073E6"
+                }
+              }
+            }
+          }
+        }
+      </script>
+</head>
+
+<body class="min-h-screen flex items-center justify-center">
+    <div class="bg-xibiu-blue rounded-xl p-10 flex flex-col items-center gap-4">
+        <p class="text-lg text-white font-bold">Obrigado por entrar em contato! Retornaremos em breve.</p>
+        <a href="http://localhost:3000/leads.html" class="text-md text-white font-bold px-3 py-2 hover:bg-transparent bg-white ring-1 ring-white rounded-xl text-xibiu-blue hover:text-white">Voltar</a>
+    </div>
+</body>
+
+</html>

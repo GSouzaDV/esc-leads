@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login e Cadastro</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                xibiu: {
+                    blue: "#0073E6"
+                }
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+
+<body class="min-h-screen flex flex-col justify-between">
+    <header class="w-full py-2 px-20 border-b flex items-center justify-between">
+        <h1 class="text-xibiu-blue flex gap-2 flex items-center font-bold text-lg">
+            <div class="w-10 h-10 bg-xibiu-blue text-white flex items-center justify-center rounded-full">
+                Xb
+            </div>
+            Administração de Cursos
+        </h1>   
+        <nav>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Nome usuário" class="px-2 py-1 ring-1 ring-xibiu-blue rounded-xl text-md text-black">
+                <input type="password" id="password" placeholder="Senha" class="px-2 py-1 ring-1 ring-xibiu-blue rounded-xl text-md text-black">
+                <button type="submit" class="px-3 py-1 text-md text-white font-bold bg-xibiu-blue rounded-xl ring-1 ring-xibiu-blue hover:bg-transparent hover:text-xibiu-blue transition-colors">Entrar</button>
+            </form>
+        </nav>
+    </header>
+
+   
+    <footer class="flex items-center justify-center py-8 px-20 bg-xibiu-blue">
+        <span class="text-center text-md text-white font-bold">© 2023 Xibiu Cursos. Todos os direitos reservados.</span>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
+
